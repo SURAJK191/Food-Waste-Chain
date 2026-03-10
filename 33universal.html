@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33 Universal Events — Birthday & Event Decoration in Bangalore</title>
+    <meta name="description" content="Birthday parties, wedding decor, engagement, baby showers and theme decorations in Bangalore. Quick WhatsApp booking + custom themes.">
+    <meta name="keywords" content="birthday decoration Bangalore, event planner Bangalore, party decorators Bangalore, baby shower decor, wedding engagement decor">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #FF6B6B;
+            --secondary: #FFCF66;
+            --accent: #4FC3F7;
+            --party-green: #61E786;
+            --background: #FFFDF8;
+            --text-dark: #2B2B2B;
+            --shadow: rgba(0, 0, 0, 0.08);
+            --shadow-hover: rgba(0, 0, 0, 0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--background);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        
+        .accent-font {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 253, 248, 0.95);
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+        }
+        
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .logo-text span {
+            color: var(--accent);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 5%;
+            overflow: hidden;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), 
+                        url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            color: white;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(255, 107, 107, 0.5);
+        }
+        
+        .btn-secondary {
+            background-color: white;
+            color: var(--primary);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+            background-color: var(--secondary);
+            color: var(--text-dark);
+        }
+        
+        /* Floating Elements */
+        .floating-balloon {
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.7;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .balloon-1 {
+            background: linear-gradient(135deg, var(--primary), #ff8e8e);
+            top: 15%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .balloon-2 {
+            background: linear-gradient(135deg, var(--accent), #7ad4ff);
+            top: 25%;
+            right: 15%;
+            animation-delay: 1s;
+            width: 50px;
+            height: 70px;
+        }
+        
+        .balloon-3 {
+            background: linear-gradient(135deg, var(--party-green), #8affb3);
+            bottom: 20%;
+            left: 15%;
+            animation-delay: 2s;
+            width: 55px;
+            height: 75px;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        /* Confetti */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            z-index: 1001;
+            pointer-events: none;
+            opacity: 0;
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 5rem 5%;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            color: var(--text-dark);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .accent-title {
+            font-family: 'Pacifico', cursive;
+            color: var(--primary);
+            font-size: 1.8rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 40px var(--shadow-hover);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .service-card p {
+            color: #666;
+        }
+        
+        /* Packages Section */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .package-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 10px 30px var(--shadow);
+            transition: all 0.3s ease;
+            text-align: center;
+            position: relative;
+            border: 2px solid transparent;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px var(--shadow-hover);
+        }
+        
+        .package-card.highlight {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+        
+        .package-card.highlight:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+        
+        .package-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .package-name {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .package-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        
+        .package-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .package-features li:before {
+            content: "✓";
+            color: var(--party-green);
+            font-weight: bold;
+        }
+        
+        .package-note {
+            text-align: center;
+            margin-top: 3rem;
+            font-style: italic;
+            color: #777;
+            background-color: rgba(255, 207, 102, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+        
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            height: 250px;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        /* Testimonials */
+        .testimonials-container {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonial-slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .testimonial-card {
+            min-width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px var(--shadow);
+            text-align: center;
+        }
+        
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--party-green));
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 2rem;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ddd;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .dot.active {
+            background-color: var(--primary);
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            max-width: 700px;
+            margin: 3rem auto 0;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 15px 40px var(--shadow);
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 300px;
+        }
+        
+        /* Info Strip */
+        .info-strip {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+            border-radius: 20px;
+            margin-top: 2rem;
+        }
+        
+        .info-strip h2 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .info-strip p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2B2B2B;
+            color: white;
+            padding: 4rem 5% 2rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column ul li a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #444;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* Sticky WhatsApp Button */
+        .sticky-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+            text-decoration: none;
+            animation: pulse 2s infinite;
+            position: relative;
+        }
+        
+        .whatsapp-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: var(--primary);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 10px;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 1.5rem;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .package-card.highlight {
+                transform: none;
+            }
+            
+            .package-card.highlight:hover {
+                transform: translateY(-10px);
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .packages-grid,
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <div class="logo-circle">33</div>
+            <div class="logo-text">Universal <span>Events</span></div>
+        </div>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#packages">Packages</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        
+        <!-- Floating Balloons -->
+        <div class="floating-balloon balloon-1"></div>
+        <div class="floating-balloon balloon-2"></div>
+        <div class="floating-balloon balloon-3"></div>
+        
+        <div class="hero-content">
+            <h1>Make Every Moment Memorable</h1>
+            <p class="hero-subtitle">Creative birthday & event decor • Weddings • Baby showers • Surprise setups</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/919559101596" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <a href="#gallery" class="btn btn-secondary">
+                    <i class="fas fa-images"></i> See Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <span class="accent-title">What We Do</span>
+            <h2 class="section-title">Services We Offer</h2>
+            <p class="section-subtitle">From intimate birthday parties to grand wedding celebrations, we create magical setups that wow your guests</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Birthday Decoration</h3>
+                    <p>Theme setups for 1st birthdays to milestone parties with custom balloons, backdrops and props.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Wedding & Engagement</h3>
+                    <p>Elegant floral backdrops, mandap decoration, stage styling and thematic setups.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Baby Shower</h3>
+                    <p>Soft palettes, florals, balloon clouds and gender-reveal setups for expecting parents.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Lighting & Stage</h3>
+                    <p>Fairy lights, LED letterings, custom stage design and ambient lighting setups.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Cake Table & Props</h3>
+                    <p>Custom cake tables, pedestals, dessert displays and thematic decorative props.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photography & Videography</h3>
+                    <p>Event coverage packages to capture your special moments professionally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Packages Section -->
+    <section id="packages" style="background-color: rgba(255, 207, 102, 0.05);">
+        <div class="container">
+            <h2 class="section-title">Popular Packages</h2>
+            <p class="section-subtitle">Transparent pricing — custom add-ons available for all packages</p>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3 class="package-name">Starter</h3>
+                    <div class="package-price">₹6,999</div>
+                    <ul class="package-features">
+                        <li>Balloon arch or garland</li>
+                        <li>Basic themed backdrop</li>
+                        <li>Small cake table decoration</li>
+                        <li>Party props for 10 guests</li>
+                        <li>Setup & dismantle</li>
+                    </ul>
+                    <a href="https://wa.me/919559101596?text=Hi%2033%20Universal%20Events!%20I'm%20interested%20in%20the%20Starter%20package%20for%20my%20event." class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Get Quote
+                    </a>
+                </div>
+                
+                <div class="package-card highlight">
+                    <div class="package-badge">Most Popular</div>
+                    <h3 class="package-name">Premium</h3>
+                    <div class="package-price">₹14,999</div>
+                    <ul class="package-features">
+                        <li>Complete themed setup</li>
+                        <li>Lighting package included</li>
+                        <li>Decor props for 20 guests</li>
+                        <li>Custom cake table + dessert display</li>
+                        <li>Entryway decoration</li>
+                        <li>Setup & dismantle</li>
+                    </ul>
+                    <a href="https://wa.me/919559101596?text=Hi%2033%20Universal%20Events!%20I'm%20interested%20in%20the%20Premium%20package%20for%20my%20event." class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Get Quote
+                    </a>
+                </div>
+                
+                <div class="package-card">
+                    <h3 class="package-name">Signature</h3>
+                    <div class="package-price">₹29,999</div>
+                    <ul class="package-features">
+                        <li>Full stage design with florals</li>
+                        <li>Premium lighting & special effects</li>
+                        <li>Photography (2 hours coverage)</li>
+                        <li>Complete venue theming</li>
+                        <li>Custom props & installations</li>
+                        <li>Setup, supervision & dismantle</li>
+                    </ul>
+                    <a href="https://wa.me/919559101596?text=Hi%2033%20Universal%20Events!%20I'm%20interested%20in%20the%20Signature%20package%20for%20my%20event." class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Get Quote
+                    </a>
+                </div>
+            </div>
+            
+            <div class="package-note">
+                <i class="fas fa-info-circle"></i> All bookings & detailed quotes via WhatsApp for instant replies. Custom packages available based on your requirements.
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <span class="accent-title">Our Portfolio</span>
+            <h2 class="section-title">Our Work — Real Events</h2>
+            <p class="section-subtitle">Balloon arches • Themed stages • Clubhouse parties • Wedding decorations</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Birthday Decoration">
+                    <div class="gallery-overlay">
+                        <h4>Kids Birthday Theme</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Wedding Stage">
+                    <div class="gallery-overlay">
+                        <h4>Wedding Stage Decor</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578985545067-53d6d7c5e1c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80" alt="Baby Shower">
+                    <div class="gallery-overlay">
+                        <h4>Baby Shower Setup</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Balloon Arch">
+                    <div class="gallery-overlay">
+                        <h4>Balloon Arch Entrance</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Cake Table">
+                    <div class="gallery-overlay">
+                        <h4>Themed Cake Table</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Engagement Decor">
+                    <div class="gallery-overlay">
+                        <h4>Engagement Ceremony</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section id="testimonials" style="background-color: rgba(79, 195, 247, 0.05);">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <p class="section-subtitle">Hear from our happy customers across Bangalore</p>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p class="testimonial-text">"Very responsive on WhatsApp and understood exactly what we wanted for our daughter's 1st birthday. The setup matched the theme perfectly and all guests were impressed!"</p>
+                        <p class="testimonial-author">- Priya Sharma, Whitefield</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p class="testimonial-text">"Great value & punctual team! They transformed our clubhouse for our parents' anniversary surprise. The floral backdrop and lighting created the perfect ambiance."</p>
+                        <p class="testimonial-author">- Rohit Kumar, Koramangala</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p class="testimonial-text">"Professional service from start to finish. The baby shower setup was exactly how we imagined - soft colors, beautiful balloon clouds and elegant floral arrangements."</p>
+                        <p class="testimonial-author">- Anjali Mehta, Indiranagar</p>
+                    </div>
+                </div>
+                
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form -->
+    <section id="contact">
+        <div class="container">
+            <span class="accent-title">Get in Touch</span>
+            <h2 class="section-title">Get a Quick Quote</h2>
+            <p class="section-subtitle">Fill in your details and we'll send you a customized quote on WhatsApp within 30 minutes</p>
+            
+            <div class="contact-form">
+                <form id="quoteForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventType">Event Type *</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="">Select Event Type</option>
+                                <option value="Birthday Party">Birthday Party</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Engagement">Engagement</option>
+                                <option value="Baby Shower">Baby Shower</option>
+                                <option value="Anniversary">Anniversary</option>
+                                <option value="Corporate Event">Corporate Event</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Event Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="venue">Venue (City/Area) *</label>
+                            <input type="text" id="venue" name="venue" placeholder="e.g. Bangalore, Koramangala" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="guests">Estimated Guest Count *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select Guest Count</option>
+                                <option value="1-20">1-20 guests</option>
+                                <option value="20-50">20-50 guests</option>
+                                <option value="50-100">50-100 guests</option>
+                                <option value="100+">100+ guests</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Additional Details</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your theme, color preferences, special requirements..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fab fa-whatsapp"></i> Send Quote Request via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer same-day setups?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes — depending on availability and location. Contact us on WhatsApp for instant confirmation. We always try to accommodate urgent requests when possible.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can we customize themes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely — we create custom themes as per your request. Share your ideas, color preferences, or Pinterest inspirations and we'll bring them to life!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I pay?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept UPI, cash on delivery, or online payment on confirmation. A 50% advance is required to confirm your booking, with the balance payable on the event day.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What areas do you serve?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We serve all of Bangalore and surrounding areas. Additional charges may apply for locations beyond 30km from the city center.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Info Strip -->
+    <section id="info">
+        <div class="container">
+            <div class="info-strip">
+                <h2>Service Area & Contact</h2>
+                <p>Serving Bangalore & surrounding areas. Fast WhatsApp replies for bookings.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 95591 01596</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span><a href="https://wa.me/919559101596" style="color: white; text-decoration: underline;">Chat on WhatsApp</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Open 24 hours (by WhatsApp appointment)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>33 Universal Events</h3>
+                <ul>
+                    <li><a href="#services">Birthday Decoration</a></li>
+                    <li><a href="#services">Weddings</a></li>
+                    <li><a href="#services">Baby Shower</a></li>
+                    <li><a href="#services">Theme Parties</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fab fa-whatsapp"></i> WhatsApp: +91 95591 01596</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Bangalore, India</li>
+                    <li><i class="fas fa-envelope"></i> 33universalevents@gmail.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            © 2026 33 Universal Events. All Rights Reserved. | Event Decorators in Bangalore
+        </div>
+    </footer>
+    
+    <!-- Sticky WhatsApp Button -->
+    <div class="sticky-whatsapp">
+        <a href="https://wa.me/919559101596" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <div class="whatsapp-badge">Fast Reply</div>
+        </a>
+    </div>
+    
+    <!-- Confetti Elements -->
+    <div id="confetti-container"></div>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Testimonial Slider
+        const testimonialSlider = document.getElementById('testimonialSlider');
+        const sliderDots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+        
+        // Initialize dots
+        function updateDots() {
+            sliderDots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+        
+        // Slide to specific testimonial
+        function slideTo(index) {
+            currentSlide = index;
+            testimonialSlider.style.transform = `translateX(-${index * 100}%)`;
+            updateDots();
+        }
+        
+        // Add click events to dots
+        sliderDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                slideTo(index);
+            });
+        });
+        
+        // Auto slide every 5 seconds
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % 3;
+            slideTo(currentSlide);
+        }, 5000);
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Contact Form Submission
+        const quoteForm = document.getElementById('quoteForm');
+        
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const eventType = document.getElementById('eventType').value;
+            const date = document.getElementById('date').value;
+            const venue = document.getElementById('venue').value;
+            const guests = document.getElementById('guests').value;
+            const message = document.getElementById('message').value;
+            
+            // Format date for display
+            const formattedDate = date ? new Date(date).toLocaleDateString('en-IN', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            }) : 'Not specified';
+            
+            // Create WhatsApp message
+            const whatsappMessage = `Hi 33 Universal Events, I'm ${name} from ${venue}. I want a quote for a ${eventType} on ${formattedDate}. Guests: ${guests}. ${message ? 'Additional details: ' + message : ''}. Please share packages.`;
+            
+            // Encode for URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // Open WhatsApp
+            window.open(`https://wa.me/919559101596?text=${encodedMessage}`, '_blank');
+            
+            // Reset form
+            quoteForm.reset();
+        });
+        
+        // Confetti Animation on Load
+        function createConfetti() {
+            const container = document.getElementById('confetti-container');
+            const colors = ['#FF6B6B', '#FFCF66', '#4FC3F7', '#61E786'];
+            
+            for (let i = 0; i < 150; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                
+                // Random properties
+                const size = Math.random() * 10 + 5;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const left = Math.random() * 100;
+                const animationDelay = Math.random() * 5;
+                const animationDuration = Math.random() * 3 + 3;
+                
+                // Apply styles
+                confetti.style.width = `${size}px`;
+                confetti.style.height = `${size}px`;
+                confetti.style.backgroundColor = color;
+                confetti.style.left = `${left}vw`;
+                confetti.style.top = `-20px`;
+                confetti.style.opacity = '1';
+                confetti.style.animation = `confettiFall ${animationDuration}s ease-in ${animationDelay}s forwards`;
+                
+                // Add to container
+                container.appendChild(confetti);
+                
+                // Remove after animation completes
+                setTimeout(() => {
+                    confetti.remove();
+                }, (animationDelay + animationDuration) * 1000);
+            }
+        }
+        
+        // Add confetti animation CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes confettiFall {
+                0% {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Trigger confetti on page load
+        window.addEventListener('load', () => {
+            setTimeout(createConfetti, 500);
+        });
+        
+        // Parallax effect for hero background
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroBackground = document.querySelector('.hero-background');
+            
+            if (heroBackground) {
+                heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+        
+        // Set min date for event date field to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').setAttribute('min', today);
+    </script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventPlanningBusiness",
+      "name": "33 Universal Events",
+      "description": "Birthday parties, wedding decor, engagement, baby showers and theme decorations in Bangalore.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "addressCountry": "India"
+      },
+      "telephone": "+919559101596",
+      "url": "",
+      "priceRange": "₹₹",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "sameAs": [
+        "https://www.instagram.com/33universalevents/",
+        "https://www.facebook.com/33universalevents/"
+      ],
+      "serviceType": [
+        "Birthday Decoration",
+        "Wedding Decoration",
+        "Engagement Decoration",
+        "Baby Shower Decoration",
+        "Theme Party Decoration",
+        "Event Planning"
+      ]
+    }
+    </script>
+</body>
+</html>
